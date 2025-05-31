@@ -1,0 +1,3 @@
+En esta carpeta comprimida se encuentran todos los archivos correspondientes a una aplicación móvil desarrollada en flutter con visual studio code que tiene como objetivo establecer una coneción vía wifi
+a un microcontrolador esp32 para el desarrollo de un proyecto de conmutación de agua para el control de temperatura en la salida usando un controlador en el código de arduino para controlar las aperturas
+de las válvulas tanto de agua caliente como del agua fría. 
