@@ -1,0 +1,116 @@
+{
+  "personajes": [
+    {
+      "nombre": "Juan",
+      "caracteristicas": {
+        "gafas": "sí",
+        "pelo corto": "sí",
+        "sombrero": "no",
+        "ojos claros": "no",
+        "piel clara": "sí",
+        "alto": "sí",
+        "usa barba": "sí",
+        "tiene bigote": "no",
+        "usa lentes de contacto": "no",
+        "tiene cicatriz visible": "no",
+        "mayor de edad": "sí"
+      }
+    },
+    {
+      "nombre": "Maria",
+      "caracteristicas": {
+        "gafas": "no",
+        "pelo corto": "no",
+        "sombrero": "sí",
+        "ojos claros": "sí",
+        "piel clara": "sí",
+        "alto": "no",
+        "usa barba": "no",
+        "tiene bigote": "no",
+        "usa lentes de contacto": "sí",
+        "tiene cicatriz visible": "sí",
+        "mayor de edad": "no"
+      }
+    },
+    {
+      "nombre": "Pedro",
+      "caracteristicas": {
+        "gafas": "no",
+        "pelo corto": "sí",
+        "sombrero": "no",
+        "ojos claros": "no",
+        "piel clara": "no",
+        "alto": "sí",
+        "usa barba": "no",
+        "tiene bigote": "sí",
+        "usa lentes de contacto": "no",
+        "tiene cicatriz visible": "no",
+        "mayor de edad": "sí"
+      }
+    },
+    {
+      "nombre": "Luis",
+      "caracteristicas": {
+        "gafas": "sí",
+        "pelo corto": "no",
+        "sombrero": "no",
+        "ojos claros": "sí",
+        "piel clara": "no",
+        "alto": "sí",
+        "usa barba": "no",
+        "tiene bigote": "no",
+        "usa lentes de contacto": "no",
+        "tiene cicatriz visible": "sí",
+        "mayor de edad": "sí"
+      }
+    },
+    {
+      "nombre": "Ana",
+      "caracteristicas": {
+        "gafas": "no",
+        "pelo corto": "sí",
+        "sombrero": "no",
+        "ojos claros": "sí",
+        "piel clara": "sí",
+        "alto": "no",
+        "usa barba": "no",
+        "tiene bigote": "no",
+        "usa lentes de contacto": "no",
+        "tiene cicatriz visible": "no",
+        "mayor de edad": "no"
+      }
+    },
+    {
+      "nombre": "Carlos",
+      "caracteristicas": {
+        "gafas": "no",
+        "pelo corto": "sí",
+        "sombrero": "sí",
+        "ojos claros": "no",
+        "piel clara": "no",
+        "alto": "no",
+        "usa barba": "sí",
+        "tiene bigote": "sí",
+        "usa lentes de contacto": "no",
+        "tiene cicatriz visible": "sí",
+        "mayor de edad": "sí"
+      }
+    },
+    {
+      "nombre": "Laura",
+      "caracteristicas": {
+        "gafas": "sí",
+        "pelo corto": "no",
+        "sombrero": "no",
+        "ojos claros": "sí",
+        "piel clara": "sí",
+        "alto": "sí",
+        "usa barba": "no",
+        "tiene bigote": "no",
+        "usa lentes de contacto": "sí",
+        "tiene cicatriz visible": "no",
+        "mayor de edad": "sí"
+      }
+    }
+  ]
+}

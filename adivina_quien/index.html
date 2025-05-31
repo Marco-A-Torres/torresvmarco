@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Tela</title>
+    <!-- Vincula el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor del juego -->
+    <div id="juego-container">
+        <h1 class="titulo">Adivina la Tela</h1>
+        <div id="pregunta" class="pregunta">¿La tela es suave?</div>
+        <div class="botones">
+            <button class="boton" onclick="manejarRespuesta('1')">Sí</button>
+            <button class="boton" onclick="manejarRespuesta('0')">No</button>
+        </div>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <!-- Formulario para agregar una nueva tela, actualizado con la nueva característica -->
+    <div id="nuevo-tela-form" class="oculto">
+        <h3>Agregar una nueva tela</h3>
+        <input type="text" id="nombre-tela" placeholder="Nombre de la tela" />
+        
+        <div class="nueva-caracteristica">
+            <label for="nueva-caracteristica-input">Nueva característica:</label>
+            <input type="text" id="nueva-caracteristica-input" placeholder="Especificar nueva característica" oninput="actualizarVistaPrevia()" />
+            
+            <p>Tipo de característica:</p>
+            <label>
+                <input type="radio" name="tipo-caracteristica" value="textura" checked onclick="actualizarVistaPrevia()">
+                Textura (Ej: La tela es de textura ______?)
+            </label><br>
+            <label>
+                <input type="radio" name="tipo-caracteristica" value="durabilidad" onclick="actualizarVistaPrevia()">
+                Durabilidad (Ej: La tela es ______ en durabilidad?)
+            </label><br>
+            <label>
+                <input type="radio" name="tipo-caracteristica" value="propiedad" onclick="actualizarVistaPrevia()">
+                Propiedad (Ej: La tela tiene ______?)
+            </label>
+            
+            <p><strong>Vista previa de la pregunta:</strong> <span id="vista-previa-pregunta"></span></p>
+        </div>
+
+        <div class="botones">
+            <button class="boton" onclick="guardarNuevaTela()">Guardar Tela</button>
+        </div>
+    </div>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="scriptT.js" defer></script>
+</body>
+</html>

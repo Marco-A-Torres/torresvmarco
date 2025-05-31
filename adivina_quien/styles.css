@@ -1,0 +1,43 @@
+/* Estilo para ocultar elementos */
+.oculto {
+    display: none !important;
+}
+
+/* Otros estilos para el diseño del juego y formularios */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e1bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#juego-container, #nuevo-personaje-form {
+    background-color: #efefc3;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(20, 255, 3, 0.2);
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boton {
+    background-color: #34dbb7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 65%;
+    margin: 5px;
+}
+
+.boton:hover {
+    background-color: #57e644;
+}
