@@ -1,0 +1,844 @@
+@charset "utf-8";
+/* CSS Document */
+.header{
+	text-align: right;
+	align-content: flex-end;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif"
+}
+
+.search{
+	height: 40px;
+	clear: right;
+}
+
+/****************************Navegación lateral*****************************************************/
+.navLat{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: hsla(207,83%,52%,1.00);
+    overflow-x: hidden;
+    padding-top: 25px;
+	border-right: medium solid #889eb9;}
+#logo{
+    padding-top: 6px;
+    padding-right: 8px;
+    padding-left: 36px;
+    padding-bottom: 20px;
+}
+.navLat a{
+	float: left;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FAEBD7;
+	display: block;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	padding: 14px 16px;
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+.fa-caret-down{
+	float: right;
+	padding-right: 8px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ECA135;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+	float: none;
+	color:antiquewhite;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover{
+	background-color: antiquewhite;
+}
+
+.show{
+	display: block;
+}
+
+.navLat a:hover{
+	color: #4D4D4D;
+}
+.navLat button{
+	cursor: pointer;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	color: antiquewhite;
+	background-color:inherit;
+	padding: 6px 8px 6px 16px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	margin: 0;
+}
+.navLat button:hover{
+	color:#4D4D4D;
+}
+
+.icons{
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	top: 90%;
+}
+
+@media only screen and (min-height:470px){
+	.contenedorSlider{
+		width: 81.5%;
+		height: 650px;
+	}
+	.contenedorSlider img{
+		height: 650px;
+	}
+	.contenedorTest{
+		left: 27%;
+	}
+	.dropdown{
+		padding-bottom: 7px;
+		padding-top: 2px;
+	}
+	.contImgOv{
+		left: 260px;
+		padding-bottom: 25px;
+	}
+	#perfiles{
+	left: 343px;
+	top: 35px;
+}
+	.alturaFooter{
+		height: 27px;
+	}
+	
+	.contenedorCards{
+		min-width: 80%;
+		padding-top: 45px;
+	}
+}
+
+@media only screen and (min-height:900px){
+	.contenedorSlider{
+		width: 36%;
+	}
+}
+
+@media only screen and (min-height:700px){
+	.contenedorSlider{
+		width: 86.8%;
+		height: 970px;
+	}
+	.contenedorSlider img{
+		height: 970px;
+	}
+	.contenedorTest{
+		left: 35%;
+	}
+	.Programas{
+		right: 4%;
+	}
+	.contImgOv{
+		left: 320px;
+	}
+	
+	.contenedorCards{
+		max-width: 85%;
+	}
+	
+	#perfiles{
+	left: 420px;
+	}
+	.dropdown{
+		padding-bottom: 15px;
+		padding-top: 6px;
+	}
+	
+	.alturaFooter{
+		height: 60px;
+	}
+	
+	.footer table{
+		width: 87%;
+	}
+}
+
+.icons a{
+    cursor: pointer;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+/****************************************************************************************************/
+
+/*****************************Imagenes doble capa**************************************************************************/
+
+.contImgOv{
+	position: relative;
+	max-width: 80%;
+}
+
+.contImgOvs{
+	position: relative;
+	width: 100%;
+	box-shadow: 0 6px 10px 3px rgba(0,0,0,0.2);
+}
+.contImgOvs img{
+	height: 350px;
+}
+
+.imgOv{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.capaE{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255,221,0,0.76);
+}
+
+.contImgOvs:hover .capaE{
+	opacity: 1;
+}
+
+.textOv{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: aliceblue;
+	font-size: 19px;
+	position:relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+/*.imgOvBack{
+	position: relative;
+	padding-bottom: 30px;
+	background: hsla(55,72%,83%,1.00);
+}*/
+
+
+#ofertaA{
+    border-radius: 8px;
+}
+
+/*********************************Slider Fotos*******************************************************/
+*{
+    box-sizing: border-box;
+    border-right-width: medium;
+    border-right-color: black;
+    border-right: thin;
+}
+
+.slides{
+	display: none;
+}
+
+.contenedorSlider{
+    position: relative;
+    margin-top: 0px;
+    margin-left: 250px;
+    margin-bottom: 0;
+    background: #008AE3;
+}
+
+.anterior, .siguiente{
+	cursor: pointer;
+	position: absolute;
+	top: 40px;
+	width: auto;
+	margin-top: 50%;
+	padding: 16px;
+	color: azure;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.siguiente{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+.anterior:hover, .siguiente:hover{
+	background-color: #323232;
+}
+
+.descripcion{
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.numeroImg{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-left: 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin-top: 40%;
+	margin-left: 15px;
+	background-color: #2294FF;
+	border-radius: 50%;
+	display: none;
+	transition: background-color 0.6 ease;
+}
+.mySlides img{
+	bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+.active, .dot:hover{
+	background-color: #FFDD00;
+	color: black;
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 3s;
+}
+/****************************************************************************************************/
+
+/****************************Tabla Programas*********************************************************/
+.btnProgramas{
+	cursor: pointer;
+	background-color: #ECA135;
+	height: 50px;
+	width: 150px;
+	border: none;
+	color:antiquewhite;
+	border-radius: 25px;
+}
+
+.btnProgramas a{
+	text-decoration: none;
+}
+
+.btnProgramas:hover{
+    background-color: hsla(35,83%,57%,0.59);
+}
+
+.titulo{
+	color:black;
+	font-size: 32px;
+	align-content: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.maestrias{
+	color:#FFC51C;
+	font-size: 22px;
+}
+
+.caption{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.Programas{
+    align-content: center;
+    text-align: center;
+    position: relative;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 18px;
+    padding-top: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 120px;
+}
+/***************************************************************************************************/
+
+/*******************************Tabla perfiles******************************************************/
+
+.celdaP{
+	text-align: center;
+}
+
+#perfiles{
+	padding-bottom: 50px;
+}
+/*********************************Paginas secundarias************************************************/
+.tituloPs{
+	font-size: 35px;
+	font-style: italic;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.subtitulo{
+	font-size: 25px;
+	font-style: italic;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: hsla(227,100%,54%,0.89);
+}
+
+.txtPs{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.paginaSecundaria{
+	padding: 0px 0 80px 0;
+	max-width: 80%;
+}
+
+.paginaSecundaria img{
+	width: 75%;
+	height: 35%;
+}
+
+@media only screen and (min-width:1652px){
+	.paginaSecundaria{
+		min-width: 85%;
+	}
+}
+/***************************************************************************************************/
+
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+body{
+	margin: 0;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 325px;
+    width: 100%;
+    color: black;
+    background-color: #889eb9;
+    padding-top: 5px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 0.01em;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer a{
+	text-decoration: none;
+	color: black;
+}
+
+.footer a:hover{
+    color: rgba(102,93,54,1.00);
+    border-bottom-color: black;
+    border-bottom-width: medium;
+}
+/***************************************************************************************************/
+
+
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+/***********************Pagina testimonios***********************************************************/
+.contenedorTest{
+    position: relative;
+    height: inherit;
+    height: 80%;
+    max-width: inherit;
+    width: 900px;
+	top: 45px;
+	bottom: 10px;
+}
+
+.contenedorTest a,h2,h5{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
+
+.contenedorTest img{
+	padding-bottom: 15px;
+	padding-top: 0px;
+}
+
+.testimonio{
+    border: thin solid hsla(204,100%,45%,1.00);
+    background: hsla(204,100%,45%,.10);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#tiTest{
+	font-size: 45px;
+	color: black;
+}
+
+.aTest{
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    font-size: 18px;
+    background-color: hsla(204,100%,45%,0.54);
+	color: white;
+    text-decoration: none;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 0;
+    margin-left: 15px;
+    margin-bottom: 1px;
+}
+
+.aTest:hover{
+    background: hsla(204,100%,45%,0.14);
+	color: blanchedalmond;
+}
+.preTest{
+	padding-bottom: 10px;
+}
+
+.seguirLeyendo{
+    color: hsla(240,100%,27%,0.93);
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    background: white;
+    text-decoration: none;
+    line-height: normal;
+    display: inline-block;
+    margin: 3px 0;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    border: thin solid hsla(240,100%,27%,0.93);
+    transition: 0.4s ease-in;
+}
+
+.seguirLeyendo:hover{
+    color: hsla(240,21%,13%,1.00);
+    border: thin solid hsla(240,21%,13%,1.00);
+	background: hsla(240,21%,13%,.40);
+	transition: 0.4s ease-in;
+}
+/*****************************Fondo dinamico*****************************************************/
+.parallax{
+	min-height: 800px;
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	
+	z-index: 1;
+	left: 250px;
+}
+
+.parallax a{
+	position: absolute;
+	
+}
+#miguel{
+	background-image: url("Imagenes/MiguelAngel.jpg");
+}
+
+#rene{
+	background-image: url("Imagenes/AlanRene.jpg");
+}
+
+#enrique{
+	background-image: url("Imagenes/EnriqueCasillas.jpg");
+}
+/*************************************************************************************************/
+
+/**********************************Pagina testimonio (ver mas)************************************/
+.nombreTest{
+    height: 800px;
+    background-color: hsla(45,100%,85%,0.15);
+    font-size: 25px;
+    padding: 750px 0 0;
+    text-align: right;
+    width: 100%;
+    font-size: 35px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: hsla(48,100%,74%,1.00);
+    text-shadow: 0px 5px 10px hsla(0,0%,0%,0.87);
+}
+
+.contenidoT{
+	height: 100%;
+	background: white;
+	padding-left: 500px;
+}
+.contenidoT a{
+    text-decoration: none;
+    color: hsla(204,100%,45%,1);
+}
+
+.contenidoT a:hover{
+    color: rgba(69,55,24,1.00);
+    text-align: center;
+}
+.conTestimonio{
+    width: 75%;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	text-align: left;
+}
+
+.tituTestimonio{
+	font-size: 30px;
+	color: darkgoldenrod;
+}
+
+.line{
+	border-bottom: thin solid hsla(168,69%,42%,1.00);
+}
+
+
+.pdf{
+	height: 450px;
+	width: 500px;
+}
+/***************************************************************************************************/
+
+
+/*******************************************Unidad de Investigacion*********************************/
+.uInvestigacion{
+	width: 95%;
+	padding-left: 300px;
+}
+
+.uInvestigacion a{
+}
+
+/************************************Acordeón*****************************************************/
+
+.accordion{
+    background-color: #FFCC39;
+    color: black;
+    cursor: pointer;
+    margin: 2px 0 0 0;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border-radius: 8px;
+}
+
+.activeAc, .accordion:hover{
+    background-color: hsla(214,100%,70%,1.00);
+}
+
+.panel{
+    padding: 0 18px;
+    display: none;
+    background-color: hsla(216,100%,59%,0.1);
+    overflow: hidden;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	border-radius: 8px;
+}
+
+.subAc{
+	font-size: 23px;
+}
+
+/*************************************************************************************************/
+
+/**************************************Pasos para titulación***************************************/
+.tab{
+	margin-left: 350px;
+	margin-right: 1650px;
+	width: 750px;
+	overflow: hidden;
+	border: 2px solid hsla(0,0%,40%,1.00);
+	background-color: #008AE3;
+	border-bottom: none;
+}
+
+.tab button{
+	width: 105px;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.tab button:hover{
+	background-color: hsla(46,100%,58%,0.87);
+}
+
+.tab button.active{
+	background-color: beige;
+}
+
+.tabcontent{
+    width: 750px;
+    margin-left: 350px;
+    display: none;
+    border: 2px solid rgba(45,82,158,1.00); 
+    border-top: none;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.tabcontent p{
+    border-radius: 5px;
+ }
+
+.txtPasos{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.btnProceso{
+	cursor: pointer;
+	background-color: #ECA135;
+	height: 25px;
+	width: 95px;
+	border: none;
+	color:antiquewhite;
+	border-radius: 25px;
+}
+.btnProcesoL{
+	cursor: pointer;
+	background-color: #ECA135;
+	height: 25px;
+	width: 125px;
+	border: none;
+	color:antiquewhite;
+	border-radius: 25px;
+}
+
+.btnProcesoXL{
+	cursor: pointer;
+	background-color: #ECA135;
+	height: 25px;
+	width: 155px;
+	border: none;
+	color:antiquewhite;
+	border-radius: 25px;
+}
+
+.tabcontent button:hover{
+	background-color: hsla(35,83%,57%,0.59);
+}
+
+/****************************************************************************************************/
+
+.busqueda{
+    background-color: hsla(207,100%,65%,0.60);
+    border: medium solid rgba(255,216,53,1);
+	display: none;
+}
+
+.last{
+	border: none;
+}
+
+.tablaFooter{
+	border-right: thin solid rgba(0,0,0,1.00);
+}
+
+#ligasI{
+	padding-bottom: 500px;
+}
+
+/**********************************Tarjeta Testimonios*******************************************************************/
+.contenedorCards{
+	padding-bottom: 500px;
+	padding-left: 30px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.tituCard{
+	color: hsla(204,100%,27%,1.00);
+	font-size: 20px;
+}
+
+.card button{
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: hsla(204,100%,45%,1.0);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+.card button:hover{
+	background-color: hsla(204,100%,45%,.40);
+}
+
+.card a{
+	text-decoration: none;
+	font-size: 14px;
+	
+}
+
+.footer iframe{
+	max-width: 100%;
+	width: 100%;
+	height: 250px;
+	margin: 0;
+	line-height: 1;
+}
+
+.underline{
+	border-bottom: medium solid hsla(359,100%,50%,1.00);
+}
